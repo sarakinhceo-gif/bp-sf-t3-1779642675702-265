@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta name="description" content="백링크 대행 사이트 블로그. 서버 웜업과 티어3 PBN의 진실. 마포에서 직접 운영하는 강력한 백링크 네트워크의 비밀을 공개합니다.">
+    <meta name="keywords" content="백링크 대행 사이트, 서버 웜업, PBN, 마포 백링크, 티어3, 백링크 블로그, SEO 팁">
+    <link rel="canonical" href="https://sf-t3-1779642675702-265.pages.dev/blog">
+    <meta property="og:title" content="백링크 대행 사이트 블로그 | 서버 웜업의 진실">
+    <meta property="og:description" content="백링크 대행 사이트 블로그. 서버 웜업과 티어3 PBN의 진실. 마포에서 직접 운영하는 강력한 백링크 네트워크의 비밀을 공개합니다.">
+    <meta property="og:type" content="article">
+    <title>블로그 | 백링크 대행 사이트 - 서버 웜업 전문</title>
+    <style>
+        /* RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        a {
+            color: #ff2a6d;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s;
+        }
+        a:hover {
+            border-bottom-color: #ff2a6d;
+        }
+        img, svg {
+            max-width: 100%;
+            height: auto;
+        }
+        /* LAYOUT SYSTEM */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 4rem;
+            padding: 2rem 0;
+            border-top: 4px solid #1f1f1f;
+        }
+        .section-gap {
+            margin: 3rem 0;
+        }
+        /* TYPOGRAPHY */
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            color: #00ffc8;
+            margin-bottom: 1.5rem;
+            line-height: 1;
+            border-left: 8px solid #ff2a6d;
+            padding-left: 1rem;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ff2a6d;
+            margin: 2rem 0 1rem;
+            letter-spacing: -0.02em;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #b3ff00;
+            margin: 1.5rem 0 0.5rem;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            max-width: 70ch;
+        }
+        .text-accent {
+            color: #00ffc8;
+            font-weight: 700;
+        }
+        /* BORDERS & TEXTURES */
+        .brutal-border {
+            border: 4px solid #1f1f1f;
+            padding: 1.5rem;
+        }
+        /* NAV */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 4px solid #1f1f1f;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #ff2a6d;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .logo a {
+            border: none;
+            color: inherit;
+        }
+        .nav-list {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-list a {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-list a.active {
+            border-bottom-color: #00ffc8;
+            color: #00ffc8;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background: #00ffc8;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+        /* RESPONSIVE 768px */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 2.2rem;
+                padding-left: 0.5rem;
+                border-left-width: 4px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: #111;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                padding: 1.5rem;
+                border: 2px solid #1f1f1f;
+                z-index: 10;
+            }
+            .nav-list.open {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            nav {
+                position: relative;
+                flex-wrap: wrap;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        /* TEL LINK */
+        .tel-link {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #b3ff00;
+            background: #1f1f1f;
+            padding: 0.5rem 1rem;
+            border: 2px solid #b3ff00;
+            transition: all 0.2s;
+        }
+        .tel-link:hover {
+            background: #b3ff00;
+            color: #0a0a0a;
+            border-color: #b3ff00;
+        }
+        /* ARTICLE CARD */
+        .post-meta {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            display: block;
+        }
+        .post-content {
+            background: #111;
+            padding: 2rem;
+            border-left: 6px solid #00ffc8;
+            margin: 2rem 0;
+        }
+        .cta-box {
+            border: 3px dashed #ff2a6d;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .cta-box a {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #ff2a6d;
+            border: 2px solid #ff2a6d;
+            padding: 0.7rem 2rem;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+        .cta-box a:hover {
+            background: #ff2a6d;
+            color: #0a0a0a;
+        }
+        footer {
+            border-top: 4px solid #1f1f1f;
+            padding-top: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            color: #555;
+            font-size: 0.85rem;
+        }
+        .tag {
+            display: inline-block;
+            background: #1f1f1f;
+            padding: 0.2rem 0.8rem;
+            margin-right: 0.5rem;
+            font-size: 0.8rem;
+            color: #b3ff00;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="/">백링크 대행 사이트</a></div>
+        <ul class="nav-list">
+            <li><a href="/">홈</a></li>
+            <li><a href="/services">서비스</a></li>
+            <li><a href="/blog" class="active">블로그</a></li>
+            <li><a href="/contact">연락처</a></li>
+            <li><a href="tel:010-1234-5678" class="tel-link">☎ 010-1234-5678</a></li>
+        </ul>
+        <button class="hamburger" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h1>서버 웜업, 백링크 대행 사이트가 말하는 진실</h1>
+            <span class="post-meta">2025.03.25 | 마포 본사 | <span class="tag">PBN</span><span class="tag">티어3</span></span>
+            <p class="text-accent">※ 당신이 아는 '백링크'는 가짜다. 마포에서 직접 굴리는 서버 웜업과 PBN의 리얼을 보여준다.</p>
+
+            <article class="post-content">
+                <h2>왜 대부분의 백링크 대행 사이트는 거짓말을 할까?</h2>
+                <p>정답은 간단하다. 그들은 서버 웜업을 안 하니까. 아니, 못 하니까. 링크만 덜렁 걸어주고 "멀티 도메인 네트워크"라고 포장한다. 하지만 우리는 다르다. 마포에 있는 실제 서버실에서 매일 새벽 4시, 당신의 사이트를 향해 웜업 트래픽을 보낸다. 티어3 PBN? 그게 진짜 파워를 내려면 서버 웜업이 필수다.</p>
+
+                <h2>티어3 PBN 네트워크의 구조</h2>
+                <p>우리는 200개 이상의 실제 도메인을 운영한다. 각 도메인은 마포 IDC에 물리적으로 존재하는 서버에 호스팅된다. 모든 서버는 24시간 웜업 상태를 유지하며, 타겟 사이트로 고품질 백링크를 전달한다. 이게 아마추어와 프로의 차이다. <strong>백링크 대행 사이트</strong>를 고를 때 가장 먼저 물어봐야 할 것: "서버 웜업 어떻게 하세요?" 만약 말을 더듬으면 그냥 나와라.</p>
+
+                <h2>서버 웜업이 왜 중요한가?</h2>
+                <p>구글은 링크가 걸린 사이트의 신뢰도를 평가할 때 해당 서버의 응답 속도, 활동 패턴, IP 평판까지 본다. 링크만 덜렁 박아놓고 서버가 잠들어 있으면 100% 걸린다. 우리는 웜업으로 모든 지표를 활성화한다. 실제 방문자처럼 행동하는 트래픽, 자연스러운 클릭 패턴, 지리적 분산까지. 그 결과, 클라이언트 사이트는 3개월 안에 평균 40% 상승한다. <a href="/contact">직접 확인해보든가.</a></p>
+
+                <h3>마포에서 운영하는 이유?</h3>
+                <p>마포는 한국 인터넷의 허브다. KT, LG, SK의 백본이 집결하고, 지연 시간이 가장 짧다. 우리는 이 인프라 위에 PBN을 구축했다. 지방에 있는 업체처럼 느린 서버로 2%씩 올리는 대신, 한 방에 10% 이상 올린다. <strong>백링크 대행 사이트</strong>가 '마포 기반'이라는 말은 이렇게 무겁다.</p>
+
+                <p>결론: 당신이 진짜 백링크를 원한다면, 화려한 말보다 서버 웜업에 집착하라. 우리는 그 집착을 서비스로 만들었다. 상담은 30분이면 끝난다. 고민할 시간에 전화나 해라.</p>
+            </article>
+
+            <div class="cta-box">
+                <p>지금 바로 마포에서 가동 중인 서버를 직접 확인하세요.</p>
+                <a href="tel:010-1234-5678">전화 상담</a>
+                <p style="margin-top:1rem;font-size:0.9rem;color:#888;">상담 시간: 평일 09:00~21:00 / 토요일 10:00~18:00</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 백링크 대행 사이트 — 마포 본사 직영, 서버 웜업 전문. 모든 권리 보유.</p>
+        <p style="margin-top:0.5rem;">서울특별시 마포구 와우산로 123 | 사업자등록번호: 101-86-12345</p>
+    </footer>
+
+    <!-- HAMBURGER TOGGLE SCRIPT -->
+    <script>
+        document.querySelector('.hamburger')?.addEventListener('click', function() {
+            const navList = document.querySelector('.nav-list');
+            navList.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
